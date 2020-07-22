@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class AVG
+{
+    int chem,comp,math;
+    double avg;
+    Scanner sc = new Scanner(System.in)
+    void init()
+    {
+        chem=sc.nextInt();
+        comp=sc.nextInt();
+        math=sc.nextInt();
+        
+    }
+    void calc()
+    {
+        double sum=(double) (chem + comp + math);
+        avg = sum/3;
+    }
+    void disp()
+    {
+        System.out.println("The avg marks are " + avg);
+    }
+}
